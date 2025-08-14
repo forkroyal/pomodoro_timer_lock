@@ -21,8 +21,8 @@ while [ $REMAINING -gt 0 ]; do
 
     # Overwrite the same line
     printf "\rTime left: %02d:%02d" "$mins" "$secs"
-    sleep 10
-    REMAINING=$((REMAINING - 1))
+    sleep 6
+    REMAINING=$((REMAINING - 6))
 done
 
 echo -e "\\nTime's up! Locking screen..."
