@@ -18,14 +18,10 @@ echo "Starting Pomodoro for $MINUTES minutes..."
 while [ $REMAINING -gt 0 ]; do
     mins=$((REMAINING / 60))
     secs=$((REMAINING % 60))
-<<<<<<< HEAD
+
     # Overwrite the same line
     printf "\rTime left: %02d:%02d" "$mins" "$secs"
     sleep 10
-=======
-    printf "\\rTime left: %02d:%02d" "$mins" "$secs"
-    sleep 1
->>>>>>> sub_minute
     REMAINING=$((REMAINING - 1))
 done
 
