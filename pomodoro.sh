@@ -21,7 +21,7 @@ while [ $REMAINING -gt 0 ]; do
     secs=$((REMAINING % 60))
     # Overwrite the same line
     printf "\rTime left: %02d:%02d" "$mins" "$secs"
-    sleep 1
+    sleep 10
     REMAINING=$((REMAINING - 1))
 done
 
