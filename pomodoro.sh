@@ -25,4 +25,5 @@ while [ $REMAINING -gt 0 ]; do
 done
 
 echo -e "\\nTime's up! Locking screen..."
+sleep 2
 loginctl lock-session
